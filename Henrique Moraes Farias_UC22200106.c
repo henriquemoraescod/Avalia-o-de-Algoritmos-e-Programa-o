@@ -5,8 +5,8 @@
 
 /* Avaliação de Algoritmos e programação */
 
-char lquestao, Nobra[30];
-int catoposto, catadjacente;
+char lquestao, Nobra[30], sitobra1[30];
+int catoposto, catadjacente, sitobra, mesinicio, mestermino, tempodeex;
 float hip, hip2, seno;
 
 int main() {
@@ -43,7 +43,46 @@ int main() {
 				printf("\n\tOpcao invalida");
 				
 		break;
+			
+		case 'c': 
+				printf("\n\tEsta questao levanta os dados da obra");
+				printf("\n\nDigite o nome da obra: ");
+				fflush(stdin);
+				scanf("%s", &Nobra);
+				printf("Digite o numero correspondente a situacao: ");
+				fflush(stdin);
+				scanf("%d", &sitobra);	
+				printf("Digite o mes de inicio: ");
+				fflush(stdin);
+				scanf("%d", &mesinicio);
+				printf("Digite o mes de termino: ");
+				fflush(stdin);
+				scanf("%d", &mestermino);
 				
+		tempodeex = mestermino - mesinicio;
+		
+	
+				printf("\n\n\t Nome da obra: %s", Nobra);
+				printf("\n\t Tempo de execucao: %d meses", tempodeex);
+				
+			printf("\n\tSituacao:");if(sitobra==1){
+					printf("Obra concluida");
+				}else if(sitobra==2){
+					printf("Problemas no projeto");
+				}else if(sitobra==3){
+					printf("Atraso nos repasses financeiros");
+				}else if(sitobra==4){
+					printf("Greve dos trabalhadores");
+				}else if(sitobra==5){
+					printf("Falta de materiais");
+				}else if(sitobra==6){
+					printf("Falta de equipamentos");
+				}
+			
+						
+			
+			
+		
 	}
 	
 	
