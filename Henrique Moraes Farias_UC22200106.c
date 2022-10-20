@@ -39,6 +39,11 @@ int main() {
 			
 		break;
 			
+		case 'b':
+				printf("\n\tOpcao invalida");
+				
+		break;
+				
 	}
 	
 	
